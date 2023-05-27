@@ -22,11 +22,13 @@ export function App(): JSX.Element {
 
 	async function getPokemonName(): Promise<void> {
 		navigator.locks.request('truth', async() => new Promise(async() => {
-			const response = await fetch(`http://localhost:3000/${getRandomPokemonId()}`);
-			const pokemon = await response.json();
+			setInterval(async() => {
+				const response = await fetch(`http://localhost:3000/${getRandomPokemonId()}`);
+				const pokemon = await response.json();
 
-			setName(pokemon.name);
-			bc.postMessage(pokemon.name);
+				setName(pokemon.name);
+				bc.postMessage(pokemon.name);
+			}, 1000);
 		}));
 	}
 
