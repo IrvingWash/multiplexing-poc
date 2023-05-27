@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 export function App(): JSX.Element {
 	const [name, setName] = useState<string | undefined>();
 
-	const bc = new BroadcastChannel('main');
+	const bc = new BroadcastChannel('pokemon');
 
 	bc.onmessage = (event: { data: string }): void => {
 		setName(event.data);
@@ -21,7 +21,7 @@ export function App(): JSX.Element {
 	);
 
 	async function getPokemonName(): Promise<void> {
-		navigator.locks.request('truth', async() => new Promise(async() => {
+		navigator.locks.request('pokemon-name', async() => new Promise(async() => {
 			setInterval(async() => {
 				const response = await fetch(`http://localhost:3000/${getRandomPokemonId()}`);
 				const pokemon = await response.json();
