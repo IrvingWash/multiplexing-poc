@@ -8,7 +8,7 @@ A Proof of Concept for fetching data from a server only from a single tab and br
 - [BroadcastChannel](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
 
 ## Stack
-- React
+- React (but it's totally framework agnostic and doesn't depend on anything)
 - express (to create a simple demo server)
 
 ## How to start
