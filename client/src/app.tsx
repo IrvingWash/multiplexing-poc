@@ -18,9 +18,8 @@ export function App(): JSX.Element {
 	);
 
 	async function getName(): Promise<void> {
-		await navigator.locks.request('truth', async(lock) => {
-			console.log(lock);
-			const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${getRandomPokemonId()}`);
+		await navigator.locks.request('truth', async() => {
+			const response = await fetch(`http://localhost:3000/${getRandomPokemonId()}`);
 			const pokemon = await response.json();
 
 			setName(pokemon.name);
@@ -29,7 +28,7 @@ export function App(): JSX.Element {
 	}
 
 	function getRandomPokemonId(): number | undefined {
-		const pokemonIds = [1, 4, 7];
+		const pokemonIds = [1, 2, 3];
 
 		return pokemonIds[Math.floor(Math.random() * pokemonIds.length)];
 	}

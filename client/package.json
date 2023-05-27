@@ -1,7 +1,6 @@
 {
-	"name": "izanagi",
+	"name": "client",
 	"version": "1.0.0",
-	"description": "",
 	"main": "index.tsx",
 	"scripts": {
 		"start": "webpack serve --config webpack/webpack.config.ts --env env=dev",
@@ -10,16 +9,8 @@
 		"check": "tsc --noEmit",
 		"prepare": "husky install"
 	},
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
 	"author": "WI",
 	"license": "ISC",
-	"bugs": {
-		"url": ""
-	},
-	"homepage": "",
 	"devDependencies": {
 		"@types/dotenv-webpack": "^7.0.3",
 		"@types/node": "^18.15.12",

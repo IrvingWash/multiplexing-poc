@@ -1,0 +1,14 @@
+{
+	"name": "locking-horns",
+	"version": "1.0.0",
+	"scripts": {
+		"client": "cd ./client/ ; npm run start",
+		"server": "cd ./server/ ; npm run start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IrvingWash/web-locks-poc.git"
+	},
+	"author": "WI",
+	"license": "ISC"
+}
