@@ -1,7 +1,7 @@
 # Locking Horns
 
 ## Description
-A Proof of Concept for fetching data from a server only from a single tab and broadcasting the data to another tabs
+A Proof of Concept for fetching data from a server only from a single tab and broadcasting the data to the other tabs
 
 ## How does it work?
 - [Web Locks API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API)
