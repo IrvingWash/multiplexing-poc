@@ -14,9 +14,10 @@ A Proof of Concept for fetching data from a server only from a single tab and br
 ## How to start
 1. Start the server
 ```console
-locking-horns$ npm run server
+npm run server
 ```
 2. Start the client
 ```console
-locking-horns$ npm run client
+npm run client
 ```
+3. Open [the app](http://localhost:8080) in your browser
