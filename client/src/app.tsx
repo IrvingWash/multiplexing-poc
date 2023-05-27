@@ -14,10 +14,10 @@ export function App(): JSX.Element {
 	}, []);
 
 	return (
-		<>
+		<main>
 			<p>I am a pokemon</p>
 			<p>The name is { name ?? '...' }</p>
-		</>
+		</main>
 	);
 
 	async function getPokemonName(): Promise<void> {
