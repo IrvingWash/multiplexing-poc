@@ -20,4 +20,4 @@ npm run server
 ```console
 npm run client
 ```
-3. Open [the app](http://localhost:8080) in your browser
+3. Open [the app](http://localhost:8080){:target="_blank"} in your browser
