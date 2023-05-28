@@ -1,4 +1,4 @@
-# Locking Horns
+# Multiplexing POC
 
 ## Description
 A Proof of Concept for fetching data from a server only from a single tab and broadcasting the data to the other tabs
